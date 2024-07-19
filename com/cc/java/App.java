@@ -13,31 +13,14 @@ public class App {
         pollobject(drone);
         pollobject(worker);
     }
-    // overloading
-    private static void pollobject(Queen object) {
+    // Polymorphism example
+    private static void pollobject(HoneyBee object) {
         output(object.doYourJob());
         output(object.fly());
         output("**************");
     } 
 
-    // overloading
-    private static void pollobject(Worker object) {
-        output(object.doYourJob());
-        output(object.fly());
-        output("**************");
-    } 
-
-    // overloading
-    private static void pollobject(Drone object) {
-        output(object.doYourJob());
-        output(object.fly());
-        output("**************");
-    } 
-
-
-
-
-
+   
 
 
 
