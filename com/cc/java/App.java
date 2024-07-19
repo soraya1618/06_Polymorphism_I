@@ -6,7 +6,7 @@ public class App {
      
         Queen queen = new Queen();
         Worker worker = new Worker();
-        Drohne drohne = new Drohne();
+        Drone drone = new Drone();
 
         output(queen.doYourJob());
         output(queen.fly());
@@ -14,8 +14,8 @@ public class App {
         output(worker.doYourJob());
         output(worker.fly());
 
-        output(drohne.doYourJob());
-        output(drohne.fly());
+        output(drone.doYourJob());
+        output(drone.fly());
         
 
 
