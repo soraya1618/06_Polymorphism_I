@@ -12,6 +12,9 @@ public class App {
         pollobject(queen);
         pollobject(drone);
         pollobject(worker);
+
+        HoneyBee bee = new HoneyBee();
+        pollobject(bee);
     }
     // Polymorphism example
     private static void pollobject(HoneyBee object) {
