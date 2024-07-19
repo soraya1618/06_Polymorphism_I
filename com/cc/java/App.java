@@ -8,22 +8,41 @@ public class App {
         Worker worker = new Worker();
         Drone drone = new Drone();
 
-        output(queen.doYourJob());
-        output(queen.fly());
 
-        output(worker.doYourJob());
-        output(worker.fly());
-
-        output(drone.doYourJob());
-        output(drone.fly());
-        
-
-
-        
+        pollobject(queen);
+        pollobject(drone);
+        pollobject(worker);
     }
+    // overloading
+    private static void pollobject(Queen object) {
+        output(object.doYourJob());
+        output(object.fly());
+        output("**************");
+    } 
 
-   
-   
+    // overloading
+    private static void pollobject(Worker object) {
+        output(object.doYourJob());
+        output(object.fly());
+        output("**************");
+    } 
+
+    // overloading
+    private static void pollobject(Drone object) {
+        output(object.doYourJob());
+        output(object.fly());
+        output("**************");
+    } 
+
+
+
+
+
+
+
+
+
+
     private static void output(String outputStr) {
         System.out.println(outputStr);
     }
